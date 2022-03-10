@@ -1,11 +1,12 @@
 import './Pokedex.css';
 import Pokecard from './Pokecard';
 
-const Pokedex = (props) => {
+const Pokedex = ({ pokemon, exp }) => {
   return (
     <div className="Pokedex">
+      <p>Total Experience: {exp}</p>
       <div className="Pokedex-cards">
-        {props.pokemon.map((p) => (
+        {pokemon.map((p) => (
           <Pokecard
             name={p.name}
             id={p.id}
