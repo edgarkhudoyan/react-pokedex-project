@@ -21,8 +21,10 @@
 
 .Pokecard-image {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 15px;
   height: 250px;
   background-color: #eceff1;
   border-radius: 5px;
